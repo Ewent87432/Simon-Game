@@ -7,8 +7,8 @@ public class FraMain extends JFrame {
 
     FraMain() {
         PanMain panMain = new PanMain();
-        setSize(400, 400);
-        setTitle("Empty Frame");
+        setSize(800, 400);
+        setTitle("Simonish Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         add(panMain);
         setVisible(true);

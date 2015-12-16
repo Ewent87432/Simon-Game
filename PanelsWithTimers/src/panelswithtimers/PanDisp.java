@@ -19,7 +19,7 @@ public class PanDisp extends JPanel // panel definition
         timer = new Timer(1000, updateTask);
         // this Panel will contain all of the output, therefore called PanDisp for display
         // It will be in the CENTRE of PanMain
-        lblName = new JLabel(" Fred");
+        lblName = new JLabel(" Simonish Game");
         add(lblName); //add it to the Frame
         nCount = 0;
         timer.start();

@@ -18,9 +18,14 @@ public class PanColour extends JPanel // panel definition
         BtnColour btnRed = new BtnColour("Red", Color.red);
         BtnColour btnBlue = new BtnColour("Blue", Color.blue);
         BtnColour btnYellow = new BtnColour("Yellow", Color.yellow);
+        BtnColour btnGreen = new BtnColour("Green", Color.green);
+        BtnColour btnStart = new BtnColour("Start", Color.black);
+       
         add(btnRed);
         add(btnBlue);
         add(btnYellow);
+        add(btnGreen);
+        add(btnStart);
         class ColourChangeListener implements ActionListener {
             public void actionPerformed(ActionEvent event) {
                 // I get the source of the click, and then I can find out what color has been assigned 
@@ -35,6 +40,8 @@ public class PanColour extends JPanel // panel definition
         btnRed.addActionListener(colourChangeListener);
         btnBlue.addActionListener(colourChangeListener);
         btnYellow.addActionListener(colourChangeListener);
+        btnGreen.addActionListener(colourChangeListener);
+        btnStart.addActionListener(colourChangeListener);
         
         
     }/*

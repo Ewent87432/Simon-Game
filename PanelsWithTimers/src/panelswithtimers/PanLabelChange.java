@@ -12,10 +12,12 @@ public class PanLabelChange extends JPanel // panel definition
 
     public PanLabelChange(PanDisp _panDisp) {
         panDisp = _panDisp;
-        JButton btn1 = new JButton("Number 1");
-        JButton btn2 = new JButton("Number 2");
+        JButton btn1 = new JButton("Easy");
+        JButton btn2 = new JButton("Medium");
+        JButton btn3 = new JButton ("Hard");
         add(btn1);
         add(btn2);
+        add(btn3);
 
         class LabelChangeListener implements ActionListener {
             public void actionPerformed(ActionEvent event) {
@@ -27,6 +29,7 @@ public class PanLabelChange extends JPanel // panel definition
         ActionListener labelChangeListener = new LabelChangeListener();
         btn1.addActionListener(labelChangeListener);
         btn2.addActionListener(labelChangeListener);
+        btn3.addActionListener(labelChangeListener);
     }
 }
     /*
